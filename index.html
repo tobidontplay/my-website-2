@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobi's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Tobi's Portfolio</h1>
+            <p class="tagline">Full Stack Developer | JavaScript Expert | Problem Solver</p>
+            <button class="cta-button" onclick="downloadResume()">Download Resume</button>
+            <button class="cta-button" onclick="showContactForm()">Contact Me</button>
+        </div>
+    </header>
+
+    <section class="skills-section">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div id="skills-container" class="skills-grid"></div>
+        </div>
+    </section>
+
+    <div id="contactDropdown" class="contact-dropdown" style="display: none;">
+        <form id="contactForm" class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
